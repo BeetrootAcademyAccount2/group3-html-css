@@ -12,3 +12,9 @@ https://freesvg.org/bear-8
 Used icons: phone paw circle-check facebook linkedin instagram
 
 Icons sizing: https://fontawesome.com/docs/web/style/size
+
+
+HUDDLE 6-03
+
+In this project we are going to use BEM methotology, helper classes and reset.css. 
+We decided on not using Bootstap. 

@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "Italianno", cursive;
+    src: url(../assets/fonts/Italianno/Italianno-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Sigmar One", sans-serif;
+    src: url(../assets/fonts/Sigmar_One/SigmarOne-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Saira", sans-serif;
+    src: url(../assets/fonts/Saira/static/Saira-Bold.ttf);
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: "Saira", sans-serif;
+    src: url(../assets/fonts/Saira/static/Saira-Regular.ttf);
+    font-weight: 400;
+  }
+  
+  /* HELPER CLASSES */

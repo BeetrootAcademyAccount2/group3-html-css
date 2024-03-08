@@ -1,12 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
 
-@font-face {
-  font-family: "Sigmar One", sans-serif;
-  src: url(../fonts/Sigmar_One/SigmarOne-Regular.ttf);
-  font-weight: 400;
-  font-style: normal;
-}
-
 /*HERO*/
 .home-hero-section {
   background-color: #000000;

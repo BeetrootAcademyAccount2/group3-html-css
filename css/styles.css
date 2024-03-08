@@ -1,30 +1,8 @@
-/* @font-face {
-  font-family: "Italianno", cursive;
-  src: url(../fonts/Italianno/Italianno-Regular.ttf);
-  font-weight: 400;
-  font-style: normal;
-} */
-
-/* @font-face {
-  font-family: "Saira", sans-serif;
-  src: url(../fonts/Saira/static/Saira-Bold.ttf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Saira", sans-serif;
-  src: url(../fonts/Saira/static/Saira-Regular.ttf);
-  font-weight: 400;
-} */
-
-/* @font-face {
-  font-family: "Sigmar One", sans-serif;
-  src: url(../fonts/Sigmar_One/SigmarOne-Regular.ttf);
-  font-weight: 400;
-  font-style: normal;
-} */
-
 @import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  scroll-padding-top: 20px;
+}
 
 body {
   font-family: "Saira", sans-serif;
@@ -100,7 +78,6 @@ body {
 .navbar-list__link {
   color: white;
   text-decoration: none;
-  position: relative;
 }
 
 .navbar-list__link::after {
@@ -143,9 +120,12 @@ body {
   position: absolute;
   z-index: 0;
   right: 0;
-  bottom: 202px;
   transition-property: fill;
   transition-duration: 500ms;
+}
+
+.home-book-table-section__call-icon--b202 {
+  bottom: 202px;
 }
 
 .home-book-table-section__call-icon:hover {

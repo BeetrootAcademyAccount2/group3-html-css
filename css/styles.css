@@ -29,11 +29,7 @@
 body {
   font-family: "Saira", sans-serif;
   font-weight: 400;
-  position: relative;
-}
-
-.home-hero-section__heading {
-  font-family: "Sigmar One", sans-serif;
+  min-height: 100vh;
 }
 
 /* HELPER CLASSES */
@@ -68,6 +64,10 @@ body {
   font-weight: 700;
   transition-property: background-color;
   transition-duration: 500ms;
+}
+
+.position-relative {
+  position: relative;
 }
 
 .d-flex {
@@ -143,7 +143,7 @@ body {
   position: absolute;
   z-index: 0;
   right: 0;
-  bottom: 108px;
+  bottom: 202px;
 }
 
 /*FOOTER*/
@@ -153,6 +153,14 @@ body {
   justify-content: space-between;
   padding: 0 44px;
   box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer__rights-reserved {
+  font-size: 32px;
 }
 
 .footer__icon {

@@ -23,6 +23,10 @@
   color: #ffc0cb;
 }
 
+.home-book-table-section {
+  min-height: 80vh;
+}
+
 .home-book-table-section__image {
   max-height: 430px;
   max-width: 558px;

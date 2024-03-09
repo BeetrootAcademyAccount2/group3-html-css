@@ -19,6 +19,10 @@ body {
   font-size: 64px;
 }
 
+.fs-40 {
+  font-size: 40px;
+}
+
 .fs-36 {
   font-size: 36px;
 }
@@ -54,6 +58,10 @@ body {
 
 .items-center {
   align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 /*NAVIGATION*/

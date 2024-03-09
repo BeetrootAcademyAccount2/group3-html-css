@@ -1,0 +1,37 @@
+.about-us-section {
+  padding: 208px 92px 320px 92px;
+  background-color: #d9d9d9;
+  margin: 0 304px;
+}
+
+/*FOUNDER*/
+.about-us-founder-section {
+  gap: 58px;
+}
+
+.about-founder-section-description__text {
+  margin-top: 24px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/*COMMUNITY*/
+.about-community-section {
+  margin-top: 174px;
+}
+
+.about-community-section-description__image {
+  max-height: 492px;
+  max-width: 380px;
+  width: 100%;
+  height: 100%;
+  border: 20px solid #ffc0cb;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 4px #00000040;
+}
+
+.about-community-section-description__text {
+  width: 50%;
+  margin-top: 24px;
+  line-height: 1.6;
+}

@@ -35,6 +35,10 @@ body {
   font-weight: 700;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .primary-btn {
   color: white;
   background-color: #ffc0cb;
@@ -111,6 +115,11 @@ body {
 }
 
 .navbar-list__order-now-btn:hover {
+  background-color: #daa5ad;
+  cursor: pointer;
+}
+
+.navbar-list__order-now-btn:active {
   background-color: #daa5ad;
   cursor: pointer;
 }

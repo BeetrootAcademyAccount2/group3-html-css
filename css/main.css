@@ -12,7 +12,6 @@
 .home-hero-section__heading {
   font-family: "Sigmar One", sans-serif;
   width: 33%;
-  text-align: center;
   color: #ffc0cb;
 }
 
@@ -69,6 +68,11 @@
 }
 
 .home-restaurant-description-section_book-btn:hover {
+  background-color: #03e7e7;
+  cursor: pointer;
+}
+
+.home-restaurant-description-section_book-btn:active {
   background-color: #03e7e7;
   cursor: pointer;
 }

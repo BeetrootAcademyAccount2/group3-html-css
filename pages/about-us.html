@@ -16,7 +16,11 @@
       <nav class="navbar">
         <ul class="navbar-list d-flex items-center fs-36 fw-700">
           <li>
-            <a href="" class="navbar-list__link position-relative">About us</a>
+            <a
+              href="./about-us.html"
+              class="navbar-list__link position-relative"
+              >About us</a
+            >
           </li>
           <li>
             <a href="" class="navbar-list__link position-relative">Menu</a>
@@ -37,52 +41,38 @@
     </header>
     <main id="about-us-main">
       <section id="about-us-section" class="about-us-section">
-        <section
-          id="about-us-founder-section"
-          class="about-us-founder-section d-flex"
+        <img
+          src="../assets/svg/bear-logo.svg"
+          alt="Pink bear logo"
+          class="bear-logo bear-grid"
+        />
+        <hgroup
+          id="about-founder-description"
+          class="about-founder-description d-flex items-center flex-column"
         >
-          <img
-            src="../assets/svg/bear-logo.svg"
-            alt="Pink bear logo"
-            class="bear-logo"
-          />
-          <section
-            id="about-founder-section-description"
-            class="about-founder-section-description d-flex items-center flex-column"
-          >
-            <h2
-              class="fs-40 fw-700 about-founder-section-description__h2 text-center"
-            >
-              About our founder
-            </h2>
-            <p
-              class="fs-24 about-founder-section-description__text text-center"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              tristique sed quam volutpat aliquam. Mauris a scelerisque mi
-            </p>
-          </section>
-        </section>
-        <section
-          id="about-community-section"
-          class="d-flex about-community-section"
+          <h2 class="fs-40 fw-700 about-founder-description__h2 text-center">
+            About our founder
+          </h2>
+          <p class="fs-24 about-founder-description__text text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            tristique sed quam volutpat aliquam. Mauris a scelerisque mi
+          </p>
+        </hgroup>
+        <hgroup
+          id="about-community-description"
+          class="about-community-description d-flex flex-column"
         >
-          <section
-            id="about-community-section-description"
-            class="d-flex flex-column"
-          >
-            <h2 class="fs-40 fw-700">About our community</h2>
-            <p class="fs-24 about-community-section-description__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              tristique sed quam volutpat aliquam. Mauris a scelerisque mi
-            </p>
-          </section>
-          <img
-            src="../assets/img/community.jpg"
-            alt="Visitors of our restaurant"
-            class="about-community-section-description__image"
-          />
-        </section>
+          <h2 class="fs-40 fw-700">About our community</h2>
+          <p class="fs-24 about-community-description__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+            tristique sed quam volutpat aliquam. Mauris a scelerisque mi
+          </p>
+        </hgroup>
+        <img
+          src="../assets/img/community.jpg"
+          alt="Visitors of our restaurant"
+          class="about-community-description__image"
+        />
       </section>
     </main>
     <footer id="about-us-footer" class="footer bg-black d-flex items-center">

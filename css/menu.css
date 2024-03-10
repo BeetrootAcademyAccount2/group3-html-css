@@ -81,17 +81,44 @@
   text-align: left;
   color: #ffffff;
   font-family: "Italianno", cursive;
+  transition: 500ms;
 }
 
 .category_style {
-  background-color: #ffc0cb;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 25%,
+    rgba(255, 192, 203, 1) 100%
+  );
   border: 12px solid #ffc0cb;
   border-radius: 12px;
   overflow: hidden;
+  transition: transform 1000ms, filter 500ms;
 }
 
 /* CALL ICON */
 
 .menu-page-content .home-book-table-section__call-icon--b202 {
   bottom: 618px;
+}
+
+/* ANIMATIONS */
+
+.category_style:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 0.75rem white);
+}
+
+.category_style:hover .menu-section__categories--img {
+  opacity: 0.5;
+  transition: 500ms;
+}
+
+.category_style:hover .menu-section__categories--subheading {
+  transition: 500ms;
+  text-shadow: 0 0 20px white;
 }

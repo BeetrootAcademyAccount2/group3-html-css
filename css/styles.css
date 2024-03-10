@@ -19,6 +19,10 @@ body {
   font-size: 64px;
 }
 
+.fs-40 {
+  font-size: 40px;
+}
+
 .fs-36 {
   font-size: 36px;
 }
@@ -29,6 +33,10 @@ body {
 
 .fw-700 {
   font-weight: 700;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .primary-btn {
@@ -56,13 +64,17 @@ body {
   align-items: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 /*NAVIGATION*/
 .header {
   width: 100%;
   height: 112px;
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   padding-right: 60px;
   box-sizing: border-box;
 }
@@ -73,6 +85,25 @@ body {
   height: 112px;
   justify-content: flex-end;
   gap: 64px;
+  position: relative;
+}
+
+.navbar-list__paw-link {
+  position: absolute;
+  z-index: 2;
+  top: 28px;
+  left: 64px;
+}
+
+.navbar-list__paw-icon {
+  max-width: 48px;
+  max-height: 48px;
+  transition: transform 1000ms, filter 1000ms;
+}
+
+.navbar-list__paw-icon:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 0.75rem white);
 }
 
 .navbar-list__link {
@@ -103,6 +134,11 @@ body {
 }
 
 .navbar-list__order-now-btn:hover {
+  background-color: #daa5ad;
+  cursor: pointer;
+}
+
+.navbar-list__order-now-btn:active {
   background-color: #daa5ad;
   cursor: pointer;
 }

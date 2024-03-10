@@ -2,11 +2,149 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="author" content="Group 3" />
+    <meta name="description" content="Restaurant" />
+    <meta name="keywords" content="Restaurant, menu, booking, food" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" type="text/css" />
     <link rel="stylesheet" href="../css/styles.css" type="text/css" />
-    <title>OUR MENU</title>
+    <link rel="stylesheet" href="../css/menu.css" type="text/css" />
+    <title>Pink Bear Restaurant</title>
   </head>
-  <body>
+  <body class="position-relative">
+    <header id="about-us-header" class="header bg-black">
+      <nav class="navbar">
+        <ul class="navbar-list d-flex items-center fs-36 fw-700">
+          <li class="navbar-list__paw-link">
+            <a href="../index.html"
+              ><img
+                src="../assets/svg/paw-icon.svg"
+                alt="Bear paw icon"
+                class="navbar-list__paw-icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="./about-us.html"
+              class="navbar-list__link position-relative"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a href="./menu.html" class="navbar-list__link position-relative"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a href="" class="navbar-list__link position-relative">Careers</a>
+          </li>
+          <li>
+            <button
+              type="button"
+              class="navbar-list__order-now-btn primary-btn"
+            >
+              Order now
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="menu-main" class="menu-page-content d-flex items-center">
+      <section class="menu-section bg-black">
+        <h1 class="menu-section__heading">Our Menu</h1>
+        <div class="menu-section__categories">
+          <section
+            class="menu-section__categories--non-alcohol position-relative category_style"
+          >
+            <img
+              src="../assets/img/nonAlcoholicBeveragesIntro.jpg"
+              alt="non-alcohol"
+              class="menu-section__categories--img"
+            />
+            <h2 class="menu-section__categories--subheading">Non-Alcohol</h2>
+          </section>
+          <section
+            class="menu-section__categories--alcohol position-relative category_style"
+          >
+            <img
+              src="../assets/img/alchohol.png"
+              alt="alcohol"
+              class="menu-section__categories--img"
+            />
+            <h2 class="menu-section__categories--subheading">Alcohol</h2>
+          </section>
+          <section
+            class="menu-section__categories--main position-relative category_style"
+          >
+            <img
+              src="../assets/img/main-upscaled.jpg"
+              alt="main"
+              class="menu-section__categories--img"
+            />
+            <h2 class="menu-section__categories--subheading">Main</h2>
+          </section>
+          <section
+            class="menu-section__categories--appetizers position-relative category_style"
+          >
+            <img
+              src="../assets/img/Appetizer.jpg"
+              alt="appetizers"
+              class="menu-section__categories--img"
+            />
+            <h2 class="menu-section__categories--subheading">Appetizers</h2>
+          </section>
+          <section
+            class="menu-section__categories--salads position-relative category_style"
+          >
+            <img
+              src="../assets/img/Salads.PNG"
+              alt="salads"
+              class="menu-section__categories--img"
+            />
+            <h2 class="menu-section__categories--subheading">Salads</h2>
+          </section>
+          <section
+            class="menu-section__categories--sauces position-relative category_style"
+          >
+            <img
+              src="../assets/img/sauses.jpeg"
+              alt="sauces"
+              class="menu-section__categories--img"
+            />
+            <h2 class="menu-section__categories--subheading">Sauces</h2>
+          </section>
+          <section
+            class="menu-section__categories--desserts position-relative category_style"
+          >
+            <img
+              src="../assets/img/deserts.jpg"
+              alt="desserts"
+              class="menu-section__categories--img"
+            />
+            <h2 class="menu-section__categories--subheading">Desserts</h2>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer id="home-footer" class="footer bg-black d-flex items-center">
+      <p class="footer__rights-reserved">© All Rights Reserved 2023</p>
+      <div>
+        <img
+          src="../assets/svg/facebook-icon.svg"
+          alt="Facebook icon"
+          class="footer__icon footer__icon--mr-26"
+        />
+        <img
+          src="../assets/svg/linkedin-icon.svg"
+          alt="LinkedIn icon"
+          class="footer__icon footer__icon--mr-26"
+        />
+        <img
+          src="../assets/svg/instagram-icon.svg"
+          alt="Instagram icon"
+          class="footer__icon"
+        />
+      </div>
+    </footer>
   </body>
 </html>

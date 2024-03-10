@@ -20,9 +20,7 @@
 }
 
 .home-book-table-section__image {
-  max-height: 430px;
-  max-width: 558px;
-  width: 100%;
+  width: 50%;
   height: 100%;
   border: 20px solid #ffc0cb;
   box-sizing: border-box;

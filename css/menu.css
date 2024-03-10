@@ -1,11 +1,11 @@
-/* MENU SECTION */
-
 @font-face {
   font-family: "Italianno";
   src: url(../fonts/Italianno/Italianno-Regular.ttf);
   font-weight: 400;
   font-style: normal;
 }
+
+/* MENU SECTION */
 
 .menu-page-content {
   justify-content: center;
@@ -75,7 +75,6 @@
 
 .menu-section__categories--subheading {
   position: relative;
-  z-index: 1;
   bottom: 80px;
   left: 25px;
   font-size: 64px;
@@ -89,4 +88,10 @@
   border: 12px solid #ffc0cb;
   border-radius: 12px;
   overflow: hidden;
+}
+
+/* CALL ICON */
+
+.menu-page-content .home-book-table-section__call-icon--b202 {
+  bottom: 618px;
 }

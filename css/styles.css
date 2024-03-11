@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@font-face {
+  font-family: "Saira";
+  src: url("../fonts/Saira/static/Saira-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Saira";
+  src: url("../fonts/Saira/static/Saira-Bold.ttf");
+}
 
 html {
   scroll-padding-top: 20px;

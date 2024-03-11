@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+@font-face {
+  font-family: "Sigmar One";
+  src: url("../fonts/Sigmar_One/SigmarOne-Regular.ttf");
+}
 
 /*HERO*/
 .home-hero-section {
@@ -13,6 +16,7 @@
   font-family: "Sigmar One", sans-serif;
   width: 33%;
   color: #ffc0cb;
+  text-align: center;
 }
 
 .home-book-table-section {

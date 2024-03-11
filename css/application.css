@@ -1,4 +1,40 @@
 .app-section {
   background-color: #ffc0cb;
-  margin: 40px 150px 86px 150px;
+  margin: 194px 150px 150px;
+  padding: 48px 92px;
+  max-width: 100%;
+  height: auto;
+}
+
+.app-form {
+  display: grid;
+  max-width: 100%;
+  margin: 48px auto;
+  gap: 48px;
+}
+
+.app-form__input-block {
+  width: 100%;
+}
+
+.app-form__input {
+  width: 100%;
+  height: 64px;
+  border: none;
+}
+
+.app-form__textarea {
+  width: 100%;
+  height: 222px;
+  border: none;
+}
+
+@media (min-width: 1000px) {
+  .app-form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .app-form__input--whole-row {
+    grid-column: span 2;
+  }
 }

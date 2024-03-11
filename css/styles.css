@@ -15,7 +15,7 @@ html {
 body {
   font-family: "Saira", sans-serif;
   font-weight: 400;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 /* HELPER CLASSES */
@@ -74,6 +74,15 @@ body {
 
 .flex-column {
   flex-direction: column;
+}
+
+.form-btn {
+  height: 58px;
+  background-color: #1b52df;
+  color: #ffffff;
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+  border: none;
 }
 
 /*NAVIGATION*/
@@ -183,7 +192,7 @@ body {
   justify-content: space-between;
   padding: 0 44px;
   box-sizing: border-box;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;

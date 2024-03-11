@@ -84,9 +84,13 @@
               class="app-form__input fs-36"
             />
           </div>
-          <div class="app-form__input-block">
+          <div class="app-form__input-block app-form__select-block">
             <label for="job-role" class="fs-36">Job Role</label>
-            <select id="job-role" name="job-role" class="app-form__input fs-36">
+            <select
+              id="job-role"
+              name="job-role"
+              class="app-form__input app-form__select fs-36"
+            >
               <option value="Waiter" selected>Waiter</option>
               <option value="Chef">Chef</option>
               <option value="Cook">Cook</option>
@@ -100,21 +104,26 @@
             <textarea
               id="address"
               name="address"
-              class="app-form__input fs-36"
+              class="app-form__textarea fs-36"
             ></textarea>
           </div>
           <div class="app-form__input-block app-form__input--whole-row">
             <label for="cv" class="fs-36">Upload Your CV</label>
-            <input
-              type="file"
-              id="cv"
-              name="cv"
-              class="app-form__input fs-36"
-            />
+            <div class="app-form__cv-block-wrapper">
+              <input
+                type="file"
+                id="cv"
+                name="cv"
+                class="app-form__cv--full-screen fs-36"
+              />
+            </div>
+            <button type="button" class="app-form__cv--mobile fs-36">
+              Choose File
+            </button>
           </div>
           <button
             type="submit"
-            class="form-btn app-form__input--whole-row fs-36"
+            class="form-btn app-form__input--whole-row app-form__apply fs-36"
           >
             Apply Now
           </button>

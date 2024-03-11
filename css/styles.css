@@ -60,6 +60,18 @@ body {
   transition-duration: 500ms;
 }
 
+.form-btn {
+  height: 58px;
+  background-color: #1b52df;
+  color: #ffffff;
+  font-family: "Saira", sans-serif;
+  font-weight: 400;
+  border: none;
+  transition-property: background-color;
+  transition-duration: 500ms;
+  box-sizing: border-box;
+}
+
 .position-relative {
   position: relative;
 }
@@ -76,13 +88,9 @@ body {
   flex-direction: column;
 }
 
-.form-btn {
-  height: 58px;
-  background-color: #1b52df;
-  color: #ffffff;
-  font-family: "Saira", sans-serif;
-  font-weight: 400;
-  border: none;
+.form-btn:hover {
+  background-color: #1949c4;
+  cursor: pointer;
 }
 
 /*NAVIGATION*/

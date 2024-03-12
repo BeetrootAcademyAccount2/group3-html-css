@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Group 3" />
+    <meta name="description" content="Restaurant" />
+    <meta name="keywords" content="Restaurant, menu, booking, food" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../css/application.css" type="text/css" />
+    <title>Pink Bear Restaurant - Application form</title>
+  </head>
+  <body class="position-relative">
+    <header id="app-header" class="header bg-black">
+      <nav class="navbar">
+        <ul class="navbar-list d-flex items-center fs-36 fw-700">
+          <li class="navbar-list__paw-link">
+            <a href="../index.html"
+              ><img
+                src="../assets/svg/paw-icon.svg"
+                alt="Bear paw icon"
+                class="navbar-list__paw-icon"
+            /></a>
+          </li>
+          <li>
+            <a
+              href="./about-us.html"
+              class="navbar-list__link position-relative"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a href="./menu.html" class="navbar-list__link position-relative"
+              >Menu</a
+            >
+          </li>
+          <li>
+            <a
+              href="./application.html"
+              class="navbar-list__link position-relative"
+              >Careers</a
+            >
+          </li>
+          <li>
+            <button
+              type="button"
+              class="navbar-list__order-now-btn primary-btn"
+            >
+              Order now
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="app-main">
+      <section id="app-section" class="app-section">
+        <h1 class="fs-40 fw-700">Job Application</h1>
+        <form method="POST" action="" class="app-form">
+          <div class="app-form__input-block">
+            <label for="first-name" class="fs-36">First Name</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              class="app-form__input fs-36"
+              required
+              minlength="2"
+              maxlength="22"
+            />
+          </div>
+          <div class="app-form__input-block">
+            <label for="last-name" class="fs-36">Last Name</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              class="app-form__input fs-36"
+              required
+              minlength="2"
+              maxlength="22"
+            />
+          </div>
+          <div class="app-form__input-block">
+            <label for="email" class="fs-36">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="app-form__input fs-36"
+              required
+            />
+          </div>
+          <div class="app-form__input-block app-form__select-block">
+            <label for="job-role" class="fs-36">Job Role</label>
+            <select
+              id="job-role"
+              name="job-role"
+              class="app-form__input app-form__select fs-36"
+              required
+            >
+              <option value="Waiter" selected>Waiter</option>
+              <option value="Chef">Chef</option>
+              <option value="Cook">Cook</option>
+              <option value="Bartender">Bartender</option>
+              <option value="Barista">Barista</option>
+              <option value="Barista">Manager</option>
+            </select>
+          </div>
+          <div class="app-form__input-block app-form__input--whole-row">
+            <label for="address" class="fs-36">Enter Address</label>
+            <textarea
+              id="address"
+              name="address"
+              class="app-form__textarea fs-36"
+            ></textarea>
+          </div>
+          <div class="app-form__input-block app-form__input--whole-row">
+            <label for="cv" class="fs-36">Upload Your CV</label>
+            <div class="app-form__cv-block-wrapper">
+              <input
+                type="file"
+                id="cv"
+                name="cv"
+                class="app-form__cv--full-screen fs-36"
+                required
+              />
+            </div>
+            <button type="button" class="app-form__cv--mobile fs-36">
+              Choose File
+            </button>
+          </div>
+          <button
+            type="submit"
+            class="form-btn app-form__input--whole-row app-form__apply fs-36"
+          >
+            Apply Now
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer id="app-footer" class="footer bg-black d-flex items-center">
+      <p class="footer__rights-reserved">© All Rights Reserved 2023</p>
+      <div>
+        <img
+          src="../assets/svg/facebook-icon.svg"
+          alt="Facebook icon"
+          class="footer__icon footer__icon--mr-26"
+        />
+        <img
+          src="../assets/svg/linkedin-icon.svg"
+          alt="LinkedIn icon"
+          class="footer__icon footer__icon--mr-26"
+        />
+        <img
+          src="../assets/svg/instagram-icon.svg"
+          alt="Instagram icon"
+          class="footer__icon"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

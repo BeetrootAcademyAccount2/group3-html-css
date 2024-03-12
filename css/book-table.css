@@ -1,13 +1,74 @@
 @font-face {
-    font-family: "Saira";
-    src: url("../fonts/Saira/static/Saira-Regular.ttf");
-    font-weight: 400;
-  }
-  
-  @font-face {
-    font-family: "Saira";
-    src: url("../fonts/Saira/static/Saira-Bold.ttf");
-    font-weight: 700;
-  }
+  font-family: "Saira";
+  src: url("../fonts/Saira/static/Saira-Regular.ttf");
+  font-weight: 400;
+}
 
-  
+@font-face {
+  font-family: "Saira";
+  src: url("../fonts/Saira/static/Saira-Bold.ttf");
+  font-weight: 700;
+}
+
+#booking-main {
+  justify-content: center;
+  margin: 200px 0 360px 0;
+  font-size: 36px;
+}
+
+/* FORM GRID */
+
+.booking-form {
+  display: grid;
+  grid-template-columns: repeat(2, 460px);
+  grid-template-rows: repeat(6, auto);
+  grid-gap: 48px 16px;
+  background-color: #00ffff;
+  border: solid 1px #eddede;
+  border-radius: 12px;
+  padding: 48px 92px 66px;
+}
+
+.booking-form__heading {
+  grid-area: 1 / 1 / 2 / 3;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.first-name-container {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.last-name-container {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.email-container {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.phone-container {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.notes-container {
+  grid-area: 4 / 1 / 5 / 3;
+}
+
+.booking-form__btn {
+  grid-area: 5 / 1 / 6 / 3;
+  width: 552px;
+  justify-self: center;
+  font-size: 36px;
+}
+
+.booking-form__input {
+  height: 64px;
+  font-size: 36px;
+  outline: none;
+  padding: 0;
+}
+
+.notes-input {
+  height: 224px;
+}

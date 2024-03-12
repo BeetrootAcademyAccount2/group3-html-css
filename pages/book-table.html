@@ -53,11 +53,11 @@
         </ul>
       </nav>
     </header>
-    <main id="booking-main" class="book-table-content d-flex items-center">
-      <section class="booking-container">
-        <h1 class="booking-container__heading">Our Menu</h1>
-        <form action="" method="get" autocomplete="”off”" class="booking-form">
-          <!-- FIRST NAME -->
+    <main id="booking-main" class="booking-page-content d-flex items-center">
+      <form action="" method="get" autocomplete="”off”" class="booking-form">
+        <h1 class="booking-form__heading">Book Table</h1>
+        <!-- FIRST NAME -->
+        <div class="first-name-container flex-column d-flex">
           <label for="f-name" class="booking-form__label f-name-label"
             >First Name</label
           >
@@ -68,58 +68,58 @@
             class="booking-form__input f-name-input"
             required
           />
-          <!-- LAST NAME -->
-          <label for="l-name" class="booking-form__label l-name-label"
-            >Last Name</label
-          >
+        </div>
+        <!-- LAST NAME -->
+        <div class="last-name-container flex-column d-flex">
+          <label for="l-name" class="booking-form__label">Last Name</label>
           <input
             type="text"
             name="l-name"
             id="l-name"
-            class="booking-form__input l-name-input"
+            class="booking-form__input"
             required
           />
-          <!-- EMAIL -->
-          <label for="email" class="booking-form__label email-label"
-            >Email</label
-          >
+        </div>
+        <!-- EMAIL -->
+        <div class="email-container flex-column d-flex">
+          <label for="email" class="booking-form__label">Email</label>
           <input
             type="email"
             name="email"
             id="email"
-            class="booking-form__input email-input"
+            class="booking-form__input"
             required
           />
-          <!-- PHONE -->
-          <label for="phone" class="booking-form__label phone-label"
-            >Phone</label
-          >
+        </div>
+        <!-- PHONE -->
+        <div class="phone-container flex-column d-flex">
+          <label for="phone" class="booking-form__label">Phone</label>
           <input
             type="text"
             name="phone"
             id="phone"
-            class="booking-form__input phone-input"
+            class="booking-form__input"
             maxlength="8"
             minlength="8"
             required
           />
-          <!-- ADDITIONAL NOTES -->
-          <label for="notes" class="booking-form__label notes-label"
+        </div>
+        <!-- ADDITIONAL NOTES -->
+        <div class="notes-container flex-column d-flex">
+          <label for="notes" class="booking-form__label"
             >Additional Notes</label
           >
-          <input
-            type="textfield"
+          <textarea
             name="notes"
             id="notes"
             class="booking-form__input notes-input"
-            required
-          />
+          ></textarea>
+        </div>
+        <button type="submit" class="booking-form__btn form-btn">
+          Book Table
+        </button>
         <!-- SUBMIT BUTTON -->
-          <button type="submit" class="booking-form__btn form-btn">
-            Book Table
-          </button>
-        </form>
-      </section>
+      </form>
     </main>
     <footer id="home-footer" class="footer bg-black d-flex items-center">
       <p class="footer__rights-reserved">© All Rights Reserved 2023</p>

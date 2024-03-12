@@ -20,6 +20,11 @@ body {
   min-height: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* HELPER CLASSES */
 .bg-black {
   background-color: #000000;

@@ -34,7 +34,7 @@ body {
 }
 
 .fs-36 {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .fs-32 {
@@ -168,11 +168,12 @@ body {
 }
 
 /*FOOTER*/
-/* .footer {
-  height: 94px;
+.footer {
+  max-height: 80px;
+  height: auto;
   color: white;
   justify-content: space-between;
-  padding: 0 44px;
+  padding: 23px 44px;
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -180,22 +181,14 @@ body {
   width: 100%;
 }
 
-.footer__rights-reserved {
-  font-size: 32px;
+.footer__icon-container {
+  gap: 15px;
 }
 
 .footer__icon {
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
 }
-
-.footer__icon:hover {
-  cursor: pointer;
-}
-
-.footer__icon--mr-26 {
-  margin-right: 26px;
-} */
 
 @media only screen and (min-width: 1020px) {
   .fs-64 {
@@ -289,15 +282,16 @@ body {
   }
 
   /*FOOTER*/
-  .footer {
-    height: 94px;
-    color: white;
-    justify-content: space-between;
-    padding: 0 44px;
-    box-sizing: border-box;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  .footer__icon-container {
+    gap: 26px;
+  }
+
+  .footer__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer__icon:hover {
+    cursor: pointer;
   }
 }

@@ -72,3 +72,10 @@
 .notes-input {
   height: 224px;
 }
+
+/* ANIMATIONS & TRANSITIONS */
+
+.booking-form__input:focus:invalid {
+  border: 2px solid red;
+}
+

@@ -46,19 +46,15 @@
   line-height: 1.6;
 }
 
-.home-restaurant-description-section__heading {
-  position: relative;
+.home-restaurant-description-section__heading--border {
+  border-left: 4px solid #00ffff;
+  padding-left: 26px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
-.home-restaurant-description-section__heading::before {
-  content: "";
-  background: #00ffff;
-  display: block;
-  width: 4px;
-  height: 147px;
-  position: absolute;
-  left: -16px;
-  top: 15px;
+.home-restaurant-description-section__heading {
+  position: relative;
 }
 
 .home-restaurant-description-section_book-btn {

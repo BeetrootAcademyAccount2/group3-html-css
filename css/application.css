@@ -82,7 +82,7 @@
 
   .app-form__cv-block-wrapper {
     background-color: white;
-    width: 484px;
+    max-width: 484px;
   }
 
   .app-form__cv--full-screen {

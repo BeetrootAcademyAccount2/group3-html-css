@@ -25,10 +25,22 @@
   border: none;
 }
 
+.app-form__input:focus {
+  outline: none;
+}
+
+.app-form__input:focus:invalid {
+  border: 2px solid red;
+}
+
 .app-form__textarea {
   width: 100%;
   height: 222px;
   border: none;
+}
+
+.app-form__textarea:focus {
+  outline: none;
 }
 
 .app-form__select-block {

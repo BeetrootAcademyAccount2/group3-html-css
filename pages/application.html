@@ -55,7 +55,7 @@
     </header>
     <main id="app-main">
       <section id="app-section" class="app-section">
-        <h1 class="fs-40">Job Application</h1>
+        <h1 class="fs-40 fw-700">Job Application</h1>
         <form method="POST" action="" class="app-form">
           <div class="app-form__input-block">
             <label for="first-name" class="fs-36">First Name</label>
@@ -64,6 +64,9 @@
               id="first-name"
               name="first-name"
               class="app-form__input fs-36"
+              required
+              minlength="2"
+              maxlength="22"
             />
           </div>
           <div class="app-form__input-block">
@@ -73,6 +76,9 @@
               id="last-name"
               name="last-name"
               class="app-form__input fs-36"
+              required
+              minlength="2"
+              maxlength="22"
             />
           </div>
           <div class="app-form__input-block">
@@ -82,6 +88,7 @@
               id="email"
               name="email"
               class="app-form__input fs-36"
+              required
             />
           </div>
           <div class="app-form__input-block app-form__select-block">
@@ -90,6 +97,7 @@
               id="job-role"
               name="job-role"
               class="app-form__input app-form__select fs-36"
+              required
             >
               <option value="Waiter" selected>Waiter</option>
               <option value="Chef">Chef</option>
@@ -115,6 +123,7 @@
                 id="cv"
                 name="cv"
                 class="app-form__cv--full-screen fs-36"
+                required
               />
             </div>
             <button type="button" class="app-form__cv--mobile fs-36">

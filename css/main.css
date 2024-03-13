@@ -21,6 +21,19 @@
   font-size: 1.7rem;
 }
 
+/*Call us icon*/
+.home-book-table-section__call-icon {
+  display: none;
+}
+
+.home-book-table-section__call-icon-no-bg {
+  display: none;
+}
+
+.home-book-table-section__call-icon--b202 {
+  bottom: 202px;
+}
+
 /*FOOD AND SERVERS SECTION*/
 .home-book-table-section {
   background-color: #d9d9d9;
@@ -66,13 +79,45 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1400px) {
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
   .home-book-table-section {
     margin: 0 100px;
   }
 
   .home-hero-section__heading {
     font-size: 2.7rem;
+  }
+
+  .home-book-table-section__call-icon {
+    display: none;
+  }
+
+  .home-book-table-section__call-icon-no-bg {
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .home-book-table-section {
+    margin: 0 140px;
+  }
+
+  .home-hero-section__heading {
+    font-size: 2.7rem;
+  }
+
+  .home-book-table-section__call-icon {
+    display: none;
+  }
+
+  .home-book-table-section__call-icon-no-bg {
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    right: 0;
   }
 }
 
@@ -86,6 +131,22 @@
 
   .home-hero-section__heading {
     font-size: 4rem;
+  }
+
+  /*Call us icon*/
+  .home-book-table-section__call-icon-no-bg {
+    display: none;
+  }
+
+  .home-book-table-section__call-icon {
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+  }
+
+  .home-book-table-section__call-icon:hover {
+    cursor: pointer;
   }
 
   /*FOOD AND SERVERS SECTION*/

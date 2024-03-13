@@ -148,23 +148,6 @@ body {
   height: auto;
 }
 
-/*Call us icon*/
-.home-book-table-section__call-icon {
-  position: absolute;
-  z-index: 0;
-  right: 0;
-  transition-property: fill;
-  transition-duration: 500ms;
-}
-
-.home-book-table-section__call-icon--b202 {
-  bottom: 202px;
-}
-
-.home-book-table-section__call-icon:hover {
-  cursor: pointer;
-}
-
 /*FOOTER*/
 .footer {
   max-height: 80px;

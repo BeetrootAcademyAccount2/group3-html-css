@@ -144,10 +144,8 @@ body {
 
 /*LOGO*/
 .bear-logo {
-  max-width: 524px;
-  max-height: 296px;
-  width: 100%;
-  height: 100%;
+  max-width: 70%;
+  height: auto;
 }
 
 /*Call us icon*/
@@ -188,6 +186,13 @@ body {
 .footer__icon {
   width: 30px;
   height: 30px;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1019px) {
+  .bear-logo {
+    max-width: 80%;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 1020px) {
@@ -279,6 +284,13 @@ body {
 
   .navbar-list__order-now-icon {
     display: none;
+  }
+
+  /*LOGO*/
+  .bear-logo {
+    max-width: 524px;
+    width: 100%;
+    height: auto;
   }
 
   /*FOOTER*/

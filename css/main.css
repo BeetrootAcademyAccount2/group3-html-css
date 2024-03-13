@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Sigmar One";
   src: url("../fonts/Sigmar_One/SigmarOne-Regular.ttf");
+  font-weight: 400;
 }
 
 /*HERO*/
 .home-hero-section {
   background-color: #000000;
-  padding-top: 186px;
-  padding-bottom: 260px;
+  padding: 186px 20px 260px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -17,6 +17,8 @@
   width: 33%;
   color: #ffc0cb;
   text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.7rem;
 }
 
 .home-book-table-section {
@@ -24,8 +26,8 @@
 }
 
 .home-book-table-section__image {
-  width: 50%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   border: 20px solid #ffc0cb;
   box-sizing: border-box;
   box-shadow: 8px 8px 4px #00000040;
@@ -73,4 +75,22 @@
 .home-restaurant-description-section_book-btn:active {
   background-color: #03e7e7;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1019px) {
+  .home-hero-section__heading {
+    font-size: 2.7rem;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .home-hero-section {
+    padding: 186px 0 260px 0;
+    font-size: 4rem;
+    gap: 20px;
+  }
+
+  .home-hero-section__heading {
+    font-size: 4rem;
+  }
 }

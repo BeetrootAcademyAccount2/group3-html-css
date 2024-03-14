@@ -1,6 +1,6 @@
 .app-section {
   background-color: #ffc0cb;
-  margin: 194px auto 150px;
+  margin: 194px auto 100px;
   padding: 48px 92px;
   max-width: 100%;
   height: auto;
@@ -78,6 +78,7 @@
 @media (min-width: 1027px) {
   .app-section {
     margin: 194px 200px;
+    max-width: 60%;
   }
 
   .app-form {

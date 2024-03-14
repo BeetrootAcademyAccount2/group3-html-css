@@ -31,19 +31,23 @@ a {
 }
 
 .fs-64 {
-  font-size: 64px;
+  font-size: 2.25rem;
 }
 
 .fs-40 {
-  font-size: 40px;
+  font-size: 2rem;
 }
 
 .fs-36 {
-  font-size: 36px;
+  font-size: 1.7rem;
+}
+
+.fs-32 {
+  font-size: 1.2rem;
 }
 
 .fs-24 {
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 .fw-700 {
@@ -61,7 +65,6 @@ a {
   border-radius: 20px;
   font-family: "Saira", sans-serif;
   border: none;
-  font-size: 32px;
   font-weight: 700;
   transition-property: background-color;
   transition-duration: 500ms;
@@ -101,41 +104,27 @@ a {
 }
 
 /*NAVIGATION*/
+
 .header {
   width: 100%;
-  height: 112px;
+  height: auto;
   position: fixed;
   top: 0;
   z-index: 1;
-  padding-right: 60px;
   box-sizing: border-box;
 }
 
 .navbar-list {
   list-style-type: none;
   width: 100%;
-  height: 112px;
-  justify-content: flex-end;
-  gap: 64px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
   position: relative;
-}
-
-.navbar-list__paw-link {
-  position: absolute;
-  z-index: 2;
-  top: 28px;
-  left: 64px;
-}
-
-.navbar-list__paw-icon {
-  max-width: 48px;
-  max-height: 48px;
-  transition: transform 1000ms, filter 1000ms;
-}
-
-.navbar-list__paw-icon:hover {
-  transform: scale(1.1);
-  filter: drop-shadow(0 0 0.75rem white);
+  padding: 20px 5px;
+  box-sizing: border-box;
 }
 
 .navbar-list__link {
@@ -143,36 +132,19 @@ a {
   text-decoration: none;
 }
 
-.navbar-list__link::after {
-  transform: scaleX(0);
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: white;
-  transition-property: transform;
-  transition-duration: 1000ms;
-}
-
-.navbar-list__link:hover::after {
-  transform: scaleX(1);
-}
-
 .navbar-list__order-now-btn {
-  height: 64px;
-  width: 264px;
+  max-height: 80px;
+  max-width: 100px;
+  padding: 10px 25px;
+  color: transparent;
 }
 
-.navbar-list__order-now-btn:hover {
-  background-color: #daa5ad;
-  cursor: pointer;
-}
-
-.navbar-list__order-now-btn:active {
-  background-color: #daa5ad;
-  cursor: pointer;
+.navbar-list__order-now-icon {
+  margin: auto;
+  vertical-align: middle;
+  width: 48px;
+  height: 48px;
+  fill: #ffffff;
 }
 
 /*LOGO*/
@@ -202,10 +174,11 @@ a {
 
 /*FOOTER*/
 .footer {
-  height: 94px;
+  max-height: 80px;
+  height: auto;
   color: white;
   justify-content: space-between;
-  padding: 0 44px;
+  padding: 23px 44px;
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
@@ -213,19 +186,117 @@ a {
   width: 100%;
 }
 
-.footer__rights-reserved {
-  font-size: 32px;
+.footer__icon-container {
+  gap: 15px;
 }
 
 .footer__icon {
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
 }
 
-.footer__icon:hover {
-  cursor: pointer;
-}
+@media only screen and (min-width: 1020px) {
+  .fs-64 {
+    font-size: 4rem;
+  }
 
-.footer__icon--mr-26 {
-  margin-right: 26px;
+  .fs-40 {
+    font-size: 2.5rem;
+  }
+
+  .fs-36 {
+    font-size: 2.25rem;
+  }
+
+  .fs-32 {
+    font-size: 2rem;
+  }
+
+  .fs-24 {
+    font-size: 1.5rem;
+  }
+
+  /*NAVIGATION*/
+  .header {
+    padding-right: 60px;
+  }
+
+  .navbar-list {
+    list-style-type: none;
+    width: 100%;
+    height: auto;
+    justify-content: flex-end;
+    gap: 64px;
+    position: relative;
+  }
+
+  .navbar-list__paw-link {
+    position: absolute;
+    z-index: 2;
+    top: 28px;
+    left: 64px;
+  }
+
+  .navbar-list__paw-icon {
+    max-width: 48px;
+    max-height: 48px;
+    transition: transform 1000ms, filter 1000ms;
+  }
+
+  .navbar-list__paw-icon:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 0.75rem white);
+  }
+
+  .navbar-list__link::after {
+    transform: scaleX(0);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    transition-property: transform;
+    transition-duration: 1000ms;
+  }
+
+  .navbar-list__link:hover::after {
+    transform: scaleX(1);
+  }
+
+  .navbar-list__order-now-btn {
+    max-width: 100%;
+    height: auto;
+    color: #ffffff;
+    font-size: 32px;
+  }
+
+  .navbar-list__order-now-btn:hover {
+    background-color: #daa5ad;
+    cursor: pointer;
+  }
+
+  .navbar-list__order-now-btn:active {
+    background-color: #daa5ad;
+    cursor: pointer;
+  }
+
+  .navbar-list__order-now-icon {
+    display: none;
+  }
+
+  /*FOOTER*/
+  .footer__icon-container {
+    gap: 26px;
+  }
+
+  .footer__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .footer__icon:hover {
+    cursor: pointer;
+  }
 }

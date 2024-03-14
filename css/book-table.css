@@ -55,10 +55,15 @@
   grid-area: 4 / 1 / 5 / 3;
 }
 
-.booking-form__btn {
+.booking-form__a {
   grid-area: 5 / 1 / 6 / 3;
-  width: 552px;
   justify-self: center;
+}
+
+/* STYLING */
+
+.booking-form__btn {
+  width: 552px;
   font-size: 36px;
 }
 
@@ -67,6 +72,7 @@
   font-size: 36px;
   outline: none;
   padding: 0;
+  border: solid 1px #ffffff;
 }
 
 .notes-input {
@@ -78,4 +84,3 @@
 .booking-form__input:focus:invalid {
   border: 2px solid red;
 }
-

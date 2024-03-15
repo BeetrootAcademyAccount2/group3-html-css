@@ -149,27 +149,8 @@ a {
 
 /*LOGO*/
 .bear-logo {
-  max-width: 524px;
-  max-height: 296px;
-  width: 100%;
-  height: 100%;
-}
-
-/*Call us icon*/
-.home-book-table-section__call-icon {
-  position: absolute;
-  z-index: 0;
-  right: 0;
-  transition-property: fill;
-  transition-duration: 500ms;
-}
-
-.home-book-table-section__call-icon--b202 {
-  bottom: 202px;
-}
-
-.home-book-table-section__call-icon:hover {
-  cursor: pointer;
+  max-width: 70%;
+  height: auto;
 }
 
 /*FOOTER*/
@@ -193,6 +174,13 @@ a {
 .footer__icon {
   width: 30px;
   height: 30px;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1019px) {
+  .bear-logo {
+    max-width: 75%;
+    height: auto;
+  }
 }
 
 @media only screen and (min-width: 1020px) {
@@ -284,6 +272,13 @@ a {
 
   .navbar-list__order-now-icon {
     display: none;
+  }
+
+  /*LOGO*/
+  .bear-logo {
+    max-width: 524px;
+    width: 100%;
+    height: auto;
   }
 
   /*FOOTER*/

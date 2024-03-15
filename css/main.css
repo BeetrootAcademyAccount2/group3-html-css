@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Sigmar One";
   src: url("../fonts/Sigmar_One/SigmarOne-Regular.ttf");
+  font-weight: 400;
 }
 
 /*HERO*/
 .home-hero-section {
   background-color: #000000;
-  padding-top: 186px;
-  padding-bottom: 260px;
+  padding: 186px 20px 150px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -17,32 +17,41 @@
   width: 33%;
   color: #ffc0cb;
   text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.7rem;
 }
 
-.home-book-table-section {
-  min-height: 80vh;
+/*Call us icon*/
+.home-book-table-section__call-icon {
+  display: none;
 }
 
-.home-book-table-section__image {
-  width: 50%;
-  height: 100%;
-  border: 20px solid #ffc0cb;
-  box-sizing: border-box;
-  box-shadow: 8px 8px 4px #00000040;
+.home-book-table-section__call-icon-no-bg {
+  display: none;
+}
+
+.home-book-table-section__call-icon--b202 {
+  bottom: 202px;
 }
 
 /*FOOD AND SERVERS SECTION*/
-
 .home-book-table-section {
   background-color: #d9d9d9;
-  margin: 0 296px;
-  padding: 294px 32px;
+  margin: 0 20px;
+  padding: 100px 32px 120px;
   gap: 82px;
   flex-wrap: wrap;
 }
 
+.home-book-table-section__image {
+  max-width: 100%;
+  height: auto;
+  border: 10px solid #ffc0cb;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 4px #00000040;
+}
+
 .home-restaurant-description-section {
-  width: 36%;
   line-height: 1.6;
 }
 
@@ -59,18 +68,120 @@
 
 .home-restaurant-description-section_book-btn {
   background-color: #00ffff;
-  width: 386px;
-  height: 84px;
+  padding: 15px 30px;
   box-shadow: 4px 4px 4px #00000040;
   margin-top: 26px;
-}
-
-.home-restaurant-description-section_book-btn:hover {
-  background-color: #03e7e7;
-  cursor: pointer;
+  box-sizing: border-box;
 }
 
 .home-restaurant-description-section_book-btn:active {
   background-color: #03e7e7;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .home-book-table-section {
+    margin: 0 100px;
+  }
+
+  .home-hero-section__heading {
+    font-size: 2.7rem;
+  }
+
+  .home-book-table-section__call-icon {
+    display: none;
+  }
+
+  .home-book-table-section__call-icon-no-bg {
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
+  .home-book-table-section {
+    margin: 0 140px;
+  }
+
+  .home-hero-section__heading {
+    font-size: 2.7rem;
+  }
+
+  .home-book-table-section__call-icon {
+    display: none;
+  }
+
+  .home-book-table-section__call-icon-no-bg {
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  /*HERO*/
+  .home-hero-section {
+    padding: 186px 0 260px 0;
+    font-size: 4rem;
+    gap: 20px;
+  }
+
+  .home-hero-section__heading {
+    font-size: 4rem;
+  }
+
+  /*Call us icon*/
+  .home-book-table-section__call-icon-no-bg {
+    display: none;
+  }
+
+  .home-book-table-section__call-icon {
+    display: inline-block;
+    position: absolute;
+    z-index: 0;
+    right: 0;
+  }
+
+  .home-book-table-section__call-icon:hover {
+    cursor: pointer;
+  }
+
+  /*FOOD AND SERVERS SECTION*/
+  .home-book-table-section {
+    margin: 0 296px;
+    padding: 294px 32px;
+  }
+
+  .home-book-table-section__image {
+    max-width: 50%;
+    height: 100%;
+    border-width: 20px;
+  }
+
+  .home-restaurant-description-section {
+    width: 36%;
+  }
+
+  .home-restaurant-description-section__heading--border {
+    border-left: 4px solid #00ffff;
+    padding-left: 26px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
+
+  .home-restaurant-description-section__heading {
+    position: relative;
+  }
+
+  .home-restaurant-description-section_book-btn {
+    padding: 16px 60px;
+  }
+
+  .home-restaurant-description-section_book-btn:hover {
+    background-color: #03e7e7;
+    cursor: pointer;
+  }
 }

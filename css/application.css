@@ -75,10 +75,29 @@
   display: none;
 }
 
-@media (min-width: 1027px) {
+@media only screen and (min-width: 320px) and (max-width: 450px) {
+  .app-form__select-block::after {
+    content: url(../assets/svg/arrow-down.svg);
+    zoom: 80%;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    pointer-events: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1350px) {
+  .app-main {
+    padding: 100px 204px 168px;
+  }
+}
+
+@media (min-width: 1350px) {
+  .app-main {
+    padding: 100px 304px 268px;
+  }
   .app-section {
-    margin: 194px 200px;
-    max-width: 60%;
+    max-width: 1120px;
   }
 
   .app-form {

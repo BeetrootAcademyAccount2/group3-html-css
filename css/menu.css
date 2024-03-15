@@ -102,6 +102,12 @@
 
 /* CALL ICON */
 
+.home-book-table-section__call-icon {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+}
+
 .menu-page-content .home-book-table-section__call-icon--b202 {
   bottom: 618px;
 }

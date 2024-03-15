@@ -10,7 +10,7 @@
   font-weight: 700;
 }
 
-#booking-main {
+.booking-page-content {
   justify-content: center;
   margin: 200px 0 360px 0;
   font-size: 36px;

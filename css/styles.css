@@ -173,7 +173,7 @@ a {
   height: 30px;
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1019px) {
+@media only screen and (min-width: 800px) {
   .bear-logo {
     max-width: 75%;
     height: auto;

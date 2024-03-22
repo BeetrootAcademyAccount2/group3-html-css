@@ -92,17 +92,23 @@
   justify-content: center;
 }
 
-.success-conteiner {
+.success-container {
   color: #00ff88;
   text-align: center;
   font-size: 36px;
   padding: 3rem;
 }
 
-.success-conteiner__icon {
+@media (max-width: 450px) {
+  .success-container {
+    margin-top: 7rem;
+  }
+}
+
+.success-container__icon {
   margin: 16px 0;
 }
 
-.success-conteiner__back {
+.success-container__back {
   text-decoration: underline;
 }

@@ -84,3 +84,24 @@
 .booking-form__input:focus:invalid {
   border: 2px solid red;
 }
+
+/* SUCCESS PAGE */
+
+.booking-success-content {
+  height: 100vh;
+  justify-content: center;
+}
+
+.success-conteiner {
+  color: #00ff88;
+  text-align: center;
+  font-size: 36px;
+}
+
+.success-conteiner__icon {
+  margin: 16px 0;
+}
+
+.success-conteiner__back {
+  text-decoration: underline;
+}

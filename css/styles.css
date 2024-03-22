@@ -150,6 +150,17 @@ a {
   height: auto;
 }
 
+/*SUCCESS PAGES*/
+.success-section {
+  margin: 240px auto;
+  color: #00ff88;
+}
+
+.check-icon {
+  max-width: 128px;
+  margin: 16px auto;
+}
+
 /*FOOTER*/
 .footer {
   max-height: 80px;
@@ -288,5 +299,11 @@ a {
 
   .footer__icon:hover {
     cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .success-section {
+    margin: 500px auto 400px;
   }
 }

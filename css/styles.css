@@ -111,6 +111,12 @@ a {
   top: 0;
   z-index: 1;
   box-sizing: border-box;
+  padding: 20px;
+}
+
+.navbar-top-list {
+  justify-content: space-between;
+  position: relative;
 }
 
 .navbar-list {
@@ -119,9 +125,52 @@ a {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
-  position: relative;
-  padding: 20px 5px;
   box-sizing: border-box;
+  display: none;
+}
+
+.navbar-list--mobile-display {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: rgb(0, 0, 0);
+  width: 90vw;
+  height: 70vh;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 4.2rem;
+}
+
+.navbar-list__paw-link {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar-list__paw-icon {
+  background-image: url(../assets/svg/paw-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  display: block;
+  width: 48px;
+  height: 48px;
+  transition: transform 1000ms, filter 1000ms;
+}
+
+.navbar-list__collapsed-menu-btn {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: block;
+}
+
+.navbar-list__collapsed-menu-icon {
+  display: block;
+  font-size: 3rem;
 }
 
 .navbar-list__link {
@@ -150,6 +199,22 @@ a {
   height: auto;
 }
 
+/*SUCCESS PAGES*/
+.success-section {
+  margin: 240px auto;
+  color: #00ff88;
+}
+
+.check-icon {
+  max-width: 128px;
+  margin: 16px auto;
+}
+
+.success-section__link {
+  text-decoration: underline;
+  display: block;
+}
+
 /*FOOTER*/
 .footer {
   max-height: 80px;
@@ -171,6 +236,19 @@ a {
 .footer__icon {
   width: 30px;
   height: 30px;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar-list {
+    display: flex;
+  }
+  .navbar-list__collapsed-menu-icon {
+    display: none;
+  }
+
+  .navbar-list--mobile-display {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -203,28 +281,13 @@ a {
 
   /*NAVIGATION*/
   .header {
-    padding-right: 60px;
+    padding: 20px 60px;
   }
 
   .navbar-list {
     list-style-type: none;
-    height: auto;
     justify-content: flex-end;
     gap: 64px;
-    position: relative;
-  }
-
-  .navbar-list__paw-link {
-    position: absolute;
-    z-index: 2;
-    top: 28px;
-    left: 64px;
-  }
-
-  .navbar-list__paw-icon {
-    max-width: 48px;
-    max-height: 48px;
-    transition: transform 1000ms, filter 1000ms;
   }
 
   .navbar-list__paw-icon:hover {
@@ -288,5 +351,11 @@ a {
 
   .footer__icon:hover {
     cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .success-section {
+    margin: 500px auto 400px;
   }
 }

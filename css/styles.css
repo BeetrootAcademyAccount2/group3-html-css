@@ -281,7 +281,7 @@ a {
 
   /*NAVIGATION*/
   .header {
-    padding-right: 60px;
+    padding: 20px 60px;
   }
 
   .navbar-list {

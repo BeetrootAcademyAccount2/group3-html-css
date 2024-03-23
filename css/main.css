@@ -4,6 +4,11 @@
   font-weight: 400;
 }
 
+/*NAVIGATION*/
+.navbar-top-list {
+  justify-content: flex-end;
+}
+
 /*HERO*/
 .home-hero-section {
   background-color: #000000;

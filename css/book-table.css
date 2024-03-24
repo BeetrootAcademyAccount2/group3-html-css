@@ -159,7 +159,8 @@
 
   .booking-form {
     border: none;
-    margin: 150px 20px;
+    margin: 0;
+    padding: 150px 20px;
   }
 
   .booking-form__btn {

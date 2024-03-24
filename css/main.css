@@ -30,10 +30,6 @@
   display: none;
 }
 
-.home-book-table-section__call-icon-no-bg {
-  display: none;
-}
-
 .home-book-table-section__call-icon--b202 {
   bottom: 202px;
 }
@@ -93,14 +89,11 @@
   }
 
   .home-book-table-section__call-icon {
-    display: none;
-  }
-
-  .home-book-table-section__call-icon-no-bg {
     display: inline-block;
     position: absolute;
     z-index: 0;
-    right: 0;
+    right: -70px;
+    width: 160px;
   }
 }
 
@@ -123,13 +116,10 @@
   }
 
   /*Call us icon*/
-  .home-book-table-section__call-icon-no-bg {
-    display: none;
-  }
-
   .home-book-table-section__call-icon {
     display: inline-block;
     position: absolute;
+    width: 208px;
     z-index: 0;
     right: 0;
   }

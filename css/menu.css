@@ -133,10 +133,44 @@
   text-shadow: 0 0 20px white;
 }
 
-/* for screens <1000px wide */
+/* FOR SCREENS >1500 PX*/
+
+@media (max-width: 1500px) {
+  .menu-page-content {
+    background-color: black;
+  }
+
+  .menu-section {
+    border: none;
+    padding: 150px 50px 270px;
+    margin: 0;
+  }
+
+  .menu-section__heading {
+    text-align: center;
+  }
+
+  /* CALL ICON POSITION */
+  .menu-page__call-icon {
+    display: none;
+  }
+
+  .menu-page__call-icon-no-bg {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    bottom: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* FOR SCREENS >1000 PX */
 
 @media (max-width: 1000px) {
-  /* GRID LAYOUT FOR SMALLER SCREENS*/
+  /* NEW GRID LAYOUT */
   .menu-section__categories {
     display: grid;
     grid-template-columns: 1fr;
@@ -172,21 +206,12 @@
     grid-area: 7 / 1 / 8 / 2;
   }
 
-  /* STYLE FOR SMALLER SCREENS */
-
-  .menu-page-content {
-    background-color: black;
-  }
-
-  .menu-section {
-    border: none;
-    padding: 100px 50px 270px;
-    margin: 0;
-  }
+  /* NEW STYLE*/
 
   .menu-section__heading {
-    text-align: center;
-    margin: 0;
+    margin: 0 0 20px;
+    font-size: 5rem;
+    line-height: 100px;
   }
 
   .menu-section__categories {
@@ -200,21 +225,5 @@
     bottom: 80px;
     left: 0;
     text-wrap: nowrap;
-  }
-
-  /* CALL ICON POSITION */
-  .menu-page__call-icon {
-    display: none;
-  }
-
-  .menu-page__call-icon-no-bg {
-    display: block;
-    position: absolute;
-    z-index: 0;
-    left: 0;
-    right: 0;
-    bottom: 110px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }

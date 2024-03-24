@@ -19,7 +19,6 @@
 
 .home-hero-section__heading {
   font-family: "Sigmar One", sans-serif;
-  width: 33%;
   color: #ffc0cb;
   text-align: center;
   margin-bottom: 40px;
@@ -90,6 +89,7 @@
 
   .home-hero-section__heading {
     font-size: 2.7rem;
+    width: 33%;
   }
 
   .home-book-table-section__call-icon {

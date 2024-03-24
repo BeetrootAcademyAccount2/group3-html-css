@@ -5,6 +5,7 @@
   display: grid;
   justify-items: center;
   row-gap: 2rem;
+  height: 100vh;
 }
 
 .about-us-description__text {
@@ -35,6 +36,7 @@
     grid-template-areas: "bear-grid founder" "community community-img";
     column-gap: 3.4rem;
     row-gap: 11rem;
+    height: auto;
   }
 
   /*FOUNDER*/

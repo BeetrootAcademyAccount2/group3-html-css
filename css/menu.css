@@ -133,7 +133,7 @@
   text-shadow: 0 0 20px white;
 }
 
-/* FOR SCREENS >1500 PX*/
+/* FOR SCREENS <1500 PX*/
 
 @media (max-width: 1500px) {
   .menu-page-content {
@@ -168,7 +168,7 @@
   }
 }
 
-/* FOR SCREENS >1000 PX */
+/* FOR SCREENS <1000 PX */
 
 @media (max-width: 1000px) {
   /* NEW GRID LAYOUT */

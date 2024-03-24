@@ -148,6 +148,7 @@
 
   .menu-section__heading {
     text-align: center;
+    font-size: 7rem;
   }
 
   /* CALL ICON POSITION */
@@ -210,7 +211,7 @@
 
   .menu-section__heading {
     margin: 0 0 20px;
-    font-size: 5rem;
+    font-size: 6rem;
     line-height: 100px;
   }
 

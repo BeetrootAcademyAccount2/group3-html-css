@@ -105,14 +105,15 @@
 
 /* CALL ICON */
 
-.home-book-table-section__call-icon {
+.menu-page__call-icon {
   position: absolute;
   z-index: 0;
   right: 0;
+  bottom: 618px;
 }
 
-.menu-page-content .home-book-table-section__call-icon--b202 {
-  bottom: 618px;
+.menu-page__call-icon-no-bg {
+  display: none;
 }
 
 /* ANIMATIONS */
@@ -179,7 +180,7 @@
 
   .menu-section {
     border: none;
-    padding: 150px 20px;
+    padding: 100px 50px 270px;
     margin: 0;
   }
 
@@ -199,5 +200,21 @@
     bottom: 80px;
     left: 0;
     text-wrap: nowrap;
+  }
+
+  /* CALL ICON POSITION */
+  .menu-page__call-icon {
+    display: none;
+  }
+
+  .menu-page__call-icon-no-bg {
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    bottom: 110px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

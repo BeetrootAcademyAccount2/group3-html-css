@@ -97,13 +97,13 @@
     row-gap: 20px;
     padding: 2rem;
     justify-content: center;
-    text-align: center;
     width: 100%;
   }
 
   .booking-form__heading {
     grid-area: 1 / 1 / 2 / 2;
     margin-bottom: 30px;
+    text-align: center;
   }
 
   .first-name-container {

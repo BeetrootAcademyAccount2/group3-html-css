@@ -4,6 +4,10 @@
   font-weight: 400;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 /*NAVIGATION*/
 .navbar-top-list {
   justify-content: flex-end;
@@ -92,7 +96,7 @@
     display: inline-block;
     position: absolute;
     z-index: 0;
-    right: -70px;
+    left: 90vw;
     width: 160px;
   }
 }
@@ -121,6 +125,7 @@
     position: absolute;
     width: 208px;
     z-index: 0;
+    left: auto;
     right: 0;
   }
 

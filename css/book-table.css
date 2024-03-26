@@ -12,26 +12,25 @@
 
 .booking-page-content {
   justify-content: center;
-  margin: 200px 0 360px 0;
-  font-size: 36px;
+  margin: 200px auto 360px auto;
 }
 
 /* FORM GRID */
 
 .booking-form {
   display: grid;
-  grid-template-columns: repeat(2, 460px);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, auto);
   grid-gap: 48px 16px;
   background-color: #00ffff;
   border: solid 1px #eddede;
   border-radius: 12px;
   padding: 48px 92px 66px;
+  margin: 50px;
 }
 
 .booking-form__heading {
   grid-area: 1 / 1 / 2 / 3;
-  font-size: 40px;
   font-weight: 700;
 }
 
@@ -64,12 +63,10 @@
 
 .booking-form__btn {
   width: 552px;
-  font-size: 36px;
 }
 
 .booking-form__input {
   height: 64px;
-  font-size: 36px;
   outline: none;
   padding: 0;
   border: solid 1px #ffffff;
@@ -83,6 +80,99 @@
 
 .booking-form__input:focus:invalid {
   border: 2px solid red;
+}
+
+/* ADDING RESPONSIVNESS */
+
+/* FOR SCREENS < 1100 PX */
+
+@media (max-width: 1100px) {
+  .booking-page-content {
+    margin: 150px auto;
+  }
+
+  .booking-form {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    row-gap: 20px;
+    padding: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .booking-form__heading {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .first-name-container {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .last-name-container {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+
+  .email-container {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+
+  .phone-container {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+
+  .notes-container {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+  .booking-form__a {
+    grid-area: 7 / 1 / 8 / 2;
+  }
+
+  .booking-form__btn {
+    max-width: 400px;
+  }
+
+  .booking-form__input {
+    min-width: 500px;
+  }
+}
+
+/* FOR SCREENS < 600 PX */
+@media (max-width: 600px) {
+  .booking-form {
+    margin: 0 50px;
+  }
+
+  .booking-form__input {
+    min-width: 400px;
+  }
+}
+
+/* FOR SCREENS < 480 PX */
+@media (max-width: 480px) {
+  .booking-page-content {
+    margin: 0;
+  }
+
+  .booking-form {
+    border: none;
+    margin: 0;
+    padding: 150px 20px;
+  }
+
+  .booking-form__btn {
+    max-width: 200px;
+  }
+
+  .booking-form__input {
+    min-width: 250px;
+  }
+
+  .fs-36 {
+    font-size: 20px;
+  }
 }
 
 /* SUCCESS PAGE */

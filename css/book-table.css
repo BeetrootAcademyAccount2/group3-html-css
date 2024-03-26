@@ -153,7 +153,6 @@
 /* FOR SCREENS < 480 PX */
 @media (max-width: 480px) {
   .booking-page-content {
-    background-color: #00ffff;
     margin: 0;
   }
 

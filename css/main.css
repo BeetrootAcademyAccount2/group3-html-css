@@ -5,6 +5,7 @@
 }
 
 main {
+  position: relative;
   overflow-x: hidden;
 }
 
@@ -96,8 +97,10 @@ main {
     display: inline-block;
     position: absolute;
     z-index: 0;
-    left: 90vw;
+    right: -70px;
     width: 160px;
+    overflow: hidden;
+    box-sizing: content-box;
   }
 }
 
@@ -121,11 +124,7 @@ main {
 
   /*Call us icon*/
   .home-book-table-section__call-icon {
-    display: inline-block;
-    position: absolute;
     width: 208px;
-    z-index: 0;
-    left: auto;
     right: 0;
   }
 

@@ -99,8 +99,6 @@ main {
     z-index: 0;
     right: -70px;
     width: 160px;
-    overflow: hidden;
-    box-sizing: content-box;
   }
 }
 

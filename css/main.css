@@ -4,6 +4,11 @@
   font-weight: 400;
 }
 
+.home-main {
+  position: relative;
+  overflow-x: hidden;
+}
+
 /*NAVIGATION*/
 .navbar-top-list {
   justify-content: flex-end;
@@ -19,7 +24,6 @@
 
 .home-hero-section__heading {
   font-family: "Sigmar One", sans-serif;
-  width: 33%;
   color: #ffc0cb;
   text-align: center;
   margin-bottom: 40px;
@@ -28,10 +32,6 @@
 
 /*Call us icon*/
 .home-book-table-section__call-icon {
-  display: none;
-}
-
-.home-book-table-section__call-icon-no-bg {
   display: none;
 }
 
@@ -90,17 +90,15 @@
 
   .home-hero-section__heading {
     font-size: 2.7rem;
+    width: 33%;
   }
 
   .home-book-table-section__call-icon {
-    display: none;
-  }
-
-  .home-book-table-section__call-icon-no-bg {
     display: inline-block;
     position: absolute;
     z-index: 0;
-    right: 0;
+    right: -70px;
+    width: 160px;
   }
 }
 
@@ -123,14 +121,8 @@
   }
 
   /*Call us icon*/
-  .home-book-table-section__call-icon-no-bg {
-    display: none;
-  }
-
   .home-book-table-section__call-icon {
-    display: inline-block;
-    position: absolute;
-    z-index: 0;
+    width: 208px;
     right: 0;
   }
 

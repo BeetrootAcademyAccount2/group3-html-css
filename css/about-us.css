@@ -4,7 +4,9 @@
   margin: 0;
   display: grid;
   justify-items: center;
+  align-items: center;
   row-gap: 2rem;
+  min-height: 100vh;
 }
 
 .about-us-description__text {
@@ -31,7 +33,7 @@
     padding: 208px 92px 320px 92px;
     margin: 0 19rem;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 2fr);
     grid-template-areas: "bear-grid founder" "community community-img";
     column-gap: 3.4rem;
     row-gap: 11rem;
